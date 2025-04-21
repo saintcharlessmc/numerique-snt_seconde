@@ -1,0 +1,59 @@
+site_name: Seconde SNT - Lycée Saint Charles SMC
+site_url: https://saintcharlessmc.github.io/numerique-snt_seconde/
+theme:
+  name: material
+  font:
+    text: Merriweather Sans
+    code: Red Hat Mono
+  logo: assets/Favicon_nb.png
+  favicon: assets/favicon.ico
+  palette:
+    # Dark Mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Dark mode
+      primary: blue grey
+      accent: deep purple
+
+    # Light Mode
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Light mode
+      primary: pink
+      accent: deep orange
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences  
+  - admonition
+  - pymdownx.tabbed:
+      alternate_style: true
+
+
+extra:
+  social:
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:b.adjeroud@stcharles-arles.com
+      name: Écrire à l'auteur
+
+    - icon: fontawesome/brands/github
+      link: https://github.com/saintcharlessmc/
+      name: Dépôt git
+
+#    - icon: favicon.ico https://github.com/squidfunk/mkdocs-material/issues/3629
+    - icon: fontawesome/solid/school
+      link: https://stch-arles.com/
+      name: Lycée Saint Charles - Saint Martin de Crau
+
+
+# copyright:  CC BY-SA / B.Adjeroud
+
